@@ -7,7 +7,7 @@
     params :email, password
 
 3) /changeAdmin METHOD: POST ==> can only be one admin
-    params: email: <YOUR_EMAIL>
+    params: email
 
 4) /jobs METHOD: GET
     * Fitlers
@@ -26,11 +26,11 @@
 
 8)  /jobs/:id METHOD: DELETE ==> only admin can delete
 
-9)  /jobs/:job_id/applications {method: GET} ==> return job applications 
+9)  /jobs/:job_id/applications METHOD: GET ==> return job applications 
 
-10)  /jobs/:job_id/applications {method: POST} ==> Apply application
+10)  /jobs/:job_id/applications METHOD: POST ==> Apply application
 
 
-11)  /jobs/:job_id/applications/:id {method: GET} ==> return single application
+11)  /jobs/:job_id/applications/:id METHOD: GET ==> return single application
 
 to run tests: bundle exec rspec spec/auth -fd bundle exec rspec    
