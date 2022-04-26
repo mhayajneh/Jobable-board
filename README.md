@@ -1,5 +1,7 @@
 # README
 
+Project API built with ruby
+
 1) /signup METHOD: POST
     params :name, email, password,password_confirmation
 
